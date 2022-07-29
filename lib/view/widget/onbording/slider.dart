@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/state_manager.dart';
 import 'package:store/controller/onbording_controller.dart';
 
- import 'package:store/data/datasource/static/static.dart';
+import 'package:store/data/datasource/static/static.dart';
 
 class OnBordingSlider
     extends GetView<OnBoardingControllerImp> {
@@ -27,13 +27,10 @@ class OnBordingSlider
                 const SizedBox(
                   height: 10,
                 ),
-                Text(
-                  onBordingList[index].title!,
-                  style:  
-                      Theme.of(context)
-                          .textTheme
-                          .headline1
-                ),
+                Text(onBordingList[index].title!,
+                    style: Theme.of(context)
+                        .textTheme
+                        .headline1),
                 const SizedBox(
                   height: 10,
                 ),
@@ -50,8 +47,7 @@ class OnBordingSlider
                       textAlign: TextAlign.center,
                       style: Theme.of(context)
                           .textTheme
-                          .bodyText1
-                         ,
+                          .bodyText1,
                     ),
                   ],
                 ),

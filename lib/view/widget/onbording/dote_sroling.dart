@@ -40,8 +40,8 @@ class DoteSrolingOnbording
                                         right: 5),
                                 decoration:
                                     BoxDecoration(
-                                  color:
-                                     AppColor.primaryAccent ,
+                                  color: AppColor
+                                      .primaryAccent,
                                   borderRadius:
                                       BorderRadius
                                           .circular(

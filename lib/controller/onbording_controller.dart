@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 // ignore: unnecessary_import
@@ -8,12 +6,14 @@ import 'package:store/core/constant/routs.dart';
 
 import '../data/datasource/static/static.dart';
 
-abstract class OnBoardingController extends GetxController {
+abstract class OnBoardingController
+    extends GetxController {
   next();
   onPageChanged(int index);
 }
 
-class OnBoardingControllerImp extends OnBoardingController {
+class OnBoardingControllerImp
+    extends OnBoardingController {
   late PageController pageController;
 
   int currentPage = 0;
@@ -21,14 +21,13 @@ class OnBoardingControllerImp extends OnBoardingController {
   @override
   next() {
     currentPage++;
- if (currentPage > onBordingList.length - 1) {
-  Get.offAllNamed(AppRoutes.login);
- }
- 
- else {
-   
+    if (currentPage > onBordingList.length - 1) {
+      Get.offAllNamed(AppRoutes.login);
+    } else {
       pageController.animateToPage(currentPage,
-          duration: const Duration(milliseconds: 400), curve: Curves.easeInOut);
+          duration:
+              const Duration(milliseconds: 400),
+          curve: Curves.easeInOut);
     }
   }
 

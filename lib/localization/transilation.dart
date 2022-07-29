@@ -19,6 +19,19 @@ class AppTranslations extends Translations {
           "titlefour": " توصيل سريع",
           "btn_continue": "استمر",
           "btn_skip": "تخطي",
+          'signin': 'تسجيل الدخول',
+          "welcome_back": "مرحبا بعودتك",
+          "signin_with_email_and_password_or_continue_with_social_media_accounts":
+              "تسجيل الدخول بالبريد الإلكتروني وكلمة المرور \nأو الاستمرار بحسابات التواصل الإجتماعي",
+          "Email": "البريد الإلكتروني",
+          "Password": "كلمة المرور",
+          "Forgot Password?":
+              "هل نسيت كلمة المرور؟",
+          "Enter your email":
+              "أدخل بريدك الإلكتروني",
+          "Enter your Password":
+              "أدخل كلمة المرور",
+          "submit": "تسجيل الدخول",
         },
         "en": {
           "lantitel": "Choose Your Language",
@@ -36,6 +49,17 @@ class AppTranslations extends Translations {
           "titlefour": " Fast Delivery",
           "btn_continue": "Continue",
           "btn_skip": "Skip",
+          'signin': 'Sign In',
+          "welcome_back": "Welcome Back",
+          "signin_with_email_and_password_or_continue_with_social_media_accounts":
+              "Sign In with Email and Password Or Continue\n with Social Media Accounts",
+          "Email": "Email",
+          "Enter your email": "Enter your email",
+          "Password": "Password",
+          "Enter your Password":
+              "Enter your password",
+          "Forgot Password?": "Forgot Password ?",
+          "submit": "Submit",
         }
       };
 }
