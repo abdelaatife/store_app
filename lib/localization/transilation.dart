@@ -32,6 +32,21 @@ class AppTranslations extends Translations {
           "Enter your Password":
               "أدخل كلمة المرور",
           "submit": "تسجيل الدخول",
+          "you_dont_have_an_account":
+              "ليس لديك حساب؟",
+          "signup": "سجل الآن",
+          "you_already_have_an_account":
+              "لديك حساب؟",
+          "complete_your_profile":
+              "إكمال بياناتك",
+          'complete_your_profile_and_get_your_first_order':
+              'إكمال بياناتك وحصل على طلبك الأول',
+          "full_name": "الاسم بالكامل",
+          "Enter your full name":
+              "أدخل اسمك بالكامل",
+          "Confirm Password": "تأكيد كلمة المرور",
+          "Confirm your Password":
+              "تأكيد كلمة المرور",
         },
         "en": {
           "lantitel": "Choose Your Language",
@@ -60,6 +75,21 @@ class AppTranslations extends Translations {
               "Enter your password",
           "Forgot Password?": "Forgot Password ?",
           "submit": "Submit",
+          "you_dont_have_an_account":
+              "You don't have an account?",
+          "signup": "Sign Up",
+          "you_already_have_an_account":
+              "You already have an account?",
+          "complete_your_profile":
+              "Complete your profile",
+          "complete_your_profile_and_get_your_first_order":
+              "Complete your profile and get\n your first order",
+          "full_name": "Full Name",
+          "Enter your full name":
+              "Enter your full name",
+          "Confirm Password": "Confirm Password",
+          "Confirm your Password":
+              "Confirm your Password",
         }
       };
 }

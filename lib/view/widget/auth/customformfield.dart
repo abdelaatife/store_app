@@ -6,13 +6,16 @@ class AppCustomFormFaild extends StatelessWidget {
   final IconData icon;
   final TextInputType keyboardType;
   final bool obscureText;
+  final TextEditingController controller;
+
   const AppCustomFormFaild(
       {Key? key,
       required this.lable,
       required this.hint,
       required this.icon,
       required this.keyboardType,
-      required this.obscureText})
+      required this.obscureText,
+      required this.controller})
       : super(key: key);
 
   @override
@@ -21,6 +24,7 @@ class AppCustomFormFaild extends StatelessWidget {
       margin: const EdgeInsets.only(top: 25),
       child: TextFormField(
         keyboardType: keyboardType,
+        controller: controller,
         obscureText: obscureText,
         decoration: InputDecoration(
           contentPadding:
@@ -56,7 +60,7 @@ class AppCustomFormFaild extends StatelessWidget {
           ),
           border: OutlineInputBorder(
             borderRadius:
-                BorderRadius.circular(30),
+                BorderRadius.circular(15),
           ),
         ),
       ),

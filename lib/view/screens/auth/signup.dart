@@ -1,26 +1,36 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:store/controller/auth/login_controller.dart';
+import 'package:store/controller/auth/signup_controller.dart';
 import 'package:store/view/widget/auth/haveacount.dart';
 import 'package:store/view/widget/auth/loginform.dart';
 import 'package:store/view/widget/auth/signintext.dart';
+import 'package:store/view/widget/auth/signupform.dart';
 import 'package:store/view/widget/auth/socialmediauth.dart';
 
-class Login extends  StatelessWidget {
-  const Login({Key? key}) : super(key: key);
+class Signup extends StatelessWidget {
+  const Signup({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    LoginControllerImp controller =
-        Get.put(LoginControllerImp());
+     SignUpControllerImp controller =
+        Get.put(SignUpControllerImp());
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            'signin'.tr,
+            'signup'.tr,
             style: ThemeData()
                 .textTheme
                 .headline1!
                 .copyWith(fontSize: 24),
+          ),
+          leading: IconButton(
+            icon: const Icon(
+              Icons.arrow_back_ios,
+              color: Colors.grey,
+            ),
+            onPressed: () {
+              Get.back();
+            },
           ),
           backgroundColor: Colors.transparent,
           elevation: 0,
@@ -28,27 +38,26 @@ class Login extends  StatelessWidget {
         ),
         body: Padding(
           padding: const EdgeInsets.symmetric(
-              horizontal: 30, vertical: 20),
+              horizontal: 30, vertical: 10),
           child: SingleChildScrollView(
             child: Column(
               children: [
                 AppSiginInText(
-                  titel: "welcome_back".tr,
+                  titel:
+                      "complete_your_profile".tr,
                   text:
-                      "signin_with_email_and_password_or_continue_with_social_media_accounts"
+                      "complete_your_profile_and_get_your_first_order"
                           .tr,
                 ),
-                const SizedBox(height: 25),
-                const AppLoginForm(),
-                const SizedBox(height: 50),
-                const AppAuthSocialMaeida(),
+                const AppSignUpForm(),
                 AppHaveAcountText(
                   text1:
-                      "you_dont_have_an_account"
+                      "you_already_have_an_account"
                           .tr,
-                  text2: "signup".tr,
+                  text2: "signin".tr,
                   onTap: () {
-                    controller.goToSignUp();
+                   controller.goToSignIn();
+                  
                   },
                 )
               ],

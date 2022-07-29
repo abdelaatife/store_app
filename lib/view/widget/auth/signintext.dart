@@ -13,7 +13,7 @@ class AppSiginInText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const SizedBox(height: 25),
+        const SizedBox(height: 15),
         Row(
           mainAxisAlignment:
               MainAxisAlignment.center,

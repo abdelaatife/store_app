@@ -18,7 +18,7 @@ class AppCustomAuthButton
       width: double.infinity,
       decoration: BoxDecoration(
         color: color,
-        borderRadius: BorderRadius.circular(75),
+        borderRadius: BorderRadius.circular(15),
       ),
       margin: const EdgeInsets.only(top: 10),
       child: MaterialButton(
