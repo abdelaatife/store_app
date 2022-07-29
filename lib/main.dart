@@ -6,10 +6,18 @@ import 'package:store/root.dart';
 import 'package:store/view/screens/auth/language.dart';
  import 'package:get/get.dart';
 import 'package:store/view/widget/language/changelocal.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+// ...
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initialServices();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+);
   runApp(const MyApp());
 }
 
