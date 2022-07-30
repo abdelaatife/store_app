@@ -2,35 +2,30 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:store/core/constant/routs.dart';
 
-abstract class OtpConroller  
+abstract class OtpConroller
     extends GetxController {
   check(code);
   goToResetpassword();
   goToemail();
 }
 
-class OtpConrollerImp
-    extends OtpConroller{
-   late TextEditingController code;
-   
+class OtpConrollerImp extends OtpConroller {
+  late TextEditingController code;
 
   @override
-  check(
-    code
-  ) {
+  check(code) {
     if (code == "44444") {
       goToResetpassword();
     } else {
       Get.snackbar(
-        "Error",
-        "Code not match",
+        "Error".tr,
+        "code not matched".tr,
         backgroundColor: Colors.red,
         colorText: Colors.white,
         snackPosition: SnackPosition.BOTTOM,
         duration: const Duration(seconds: 4),
       );
     }
-   
   }
 
   @override
@@ -40,16 +35,16 @@ class OtpConrollerImp
 
   @override
   void onInit() {
-     code = TextEditingController();
-     super.onInit();
+    code = TextEditingController();
+    super.onInit();
   }
 
   @override
   void dispose() {
-     code.dispose();
-     super.dispose();
-  } 
-  
+    code.dispose();
+    super.dispose();
+  }
+
   @override
   goToemail() {
     Get.toNamed(AppRoutes.forgetPassword);

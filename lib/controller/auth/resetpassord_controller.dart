@@ -19,8 +19,8 @@ class ResetPasswordControllerImp
       goToSuccessPasswordChanget();
     } else {
       Get.snackbar(
-        "Error",
-        "Password and Confirm Password not match",
+        "Error".tr,
+        "Password and Confirm Password not match".tr,
         backgroundColor: Colors.red,
         colorText: Colors.white,
         snackPosition: SnackPosition.BOTTOM,

@@ -19,8 +19,8 @@ class VerifyEmailControllerImp
       goToHome();
     } else {
       Get.snackbar(
-        "Error",
-        "Code not match",
+        "Error".tr,
+        "Code not match".tr,
         backgroundColor: Colors.red,
         colorText: Colors.white,
         snackPosition: SnackPosition.BOTTOM,

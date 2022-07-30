@@ -22,23 +22,23 @@ class SignUpControllerImp
         password.text.isEmpty ||
         confirmPassword.text.isEmpty) {
       Get.snackbar(
-        "Error",
-        "Please fill all the fields",
+        "Error".tr,
+        "please fill all the fields".tr,
         backgroundColor: Colors.red,
         colorText: Colors.white,
       );
     } else if (password.text.length <= 6) {
       Get.snackbar(
-        "Error",
-        "Password must be at least 6 characters",
+        "Error".tr,
+        "Password must be at least 6 characters".tr,
         backgroundColor: Colors.red,
         colorText: Colors.white,
       );}
      else if (password.text !=
         confirmPassword.text) {
       Get.snackbar(
-        "Error",
-        "Password and Confirm Password does not match",
+        "Error".tr,
+        "Password and Confirm Password does not match".tr,
         backgroundColor: Colors.red,
         colorText: Colors.white,
       );

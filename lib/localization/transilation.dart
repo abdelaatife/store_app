@@ -61,6 +61,11 @@ class AppTranslations extends Translations {
                   'password_changed_successfully': 'تم تغيير كلمة المرور بنجاح',
                   'go_to_home': 'ذهاب إلى الصفحة الرئيسية',
                   "verify_email": "تحقق من بريدك الإلكتروني",
+                  "Error": "خطأ",
+                  "please fill all the fields": "يرجى ملء جميع الحقول",
+                  "code not matched": "كود غير مطابق",
+                  "Password must be at least 6 characters": "كلمة المرور يجب أن تكون أكثر من 6 أحرف",
+                  "Password and Confirm Password does not match": "كلمة المرور وتأكيد كلمة المرور لا يتطابقان",
         },
         "en": {
           "lantitel": "Choose Your Language",
@@ -118,6 +123,12 @@ class AppTranslations extends Translations {
                   'password_changed_successfully': 'Password changed successfully',
                   'go_to_home': 'Go to Home',
                   "verify_email": "Verify Email",
+                  "Error": "Error",
+                  "please fill all the fields": "Please fill all the fields",
+                  "code not matched": "Code not matched",
+                  "Password must be at least 6 characters": "Password must be at least 6 characters",
+                  "Password and Confirm Password does not match": "Password and Confirm Password does not match",
+
 
         }
       };
