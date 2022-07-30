@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:store/controller/auth/signup_controller.dart';
-import 'package:store/view/widget/auth/haveacount.dart';
-import 'package:store/view/widget/auth/loginform.dart';
-import 'package:store/view/widget/auth/signintext.dart';
-import 'package:store/view/widget/auth/signupform.dart';
-import 'package:store/view/widget/auth/socialmediauth.dart';
-
+import 'package:store/view/widget/auth/text/haveacount.dart';
+ import 'package:store/view/widget/auth/text/signintext.dart';
+import 'package:store/view/widget/auth/form/signupform.dart';
+ 
 class Signup extends StatelessWidget {
   const Signup({Key? key}) : super(key: key);
 

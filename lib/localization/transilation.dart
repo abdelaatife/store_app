@@ -47,6 +47,20 @@ class AppTranslations extends Translations {
           "Confirm Password": "تأكيد كلمة المرور",
           "Confirm your Password":
               "تأكيد كلمة المرور",
+              "forget_password": "هل نسيت كلمة المرور؟",
+              "enter_your_email_to_receive_a_reset_code": "أدخل بريدك الإلكتروني لإستلام رمز إعادة  \nتعيين كلمة المرور",
+              "send_reset_code": "إرسال رمز إعادة تعيين",
+              'Verify': 'تحقق',
+              "Verify Code": "كود التحقق",
+              "verification_code_has_been_sent_to_your_email_please_check_your_email_and_enter_the_code":
+                  "تم إرسال كود التحقق إلى بريدك الإلكتروني. يرجى التحقق من بريدك الإلكتروني وأدخل الكود",
+                  "not your email?": " ليس بريدك الإلكتروني؟",
+                  "Change Email": "تغيير البريد الإلكتروني",
+                  "Reset Password": "إعادة تعيين كلمة المرور",
+                  "Enter your new password": "أدخل كلمة المرور الجديدة",
+                  'password_changed_successfully': 'تم تغيير كلمة المرور بنجاح',
+                  'go_to_home': 'ذهاب إلى الصفحة الرئيسية',
+                  "verify_email": "تحقق من بريدك الإلكتروني",
         },
         "en": {
           "lantitel": "Choose Your Language",
@@ -90,6 +104,21 @@ class AppTranslations extends Translations {
           "Confirm Password": "Confirm Password",
           "Confirm your Password":
               "Confirm your Password",
+              "forget_password": "Forget Password?",
+              'enter_your_email_to_receive_a_reset_code': 'Enter your email to receive a reset Code',
+              "send_reset_code": "Send Reset Code",
+              'Verify': 'Verify',
+              "Verify Code": "Verify Code",
+              "verification_code_has_been_sent_to_your_email_please_check_your_email_and_enter_the_code":
+                  "Verification code has been sent to your email. Please check your email and enter the code",
+                  "not your email?": "Not your email?",
+                  "Change Email": "Change Email",
+                  "Reset Password": "Reset Password",
+                  "Enter your new password": "Enter your new password",
+                  'password_changed_successfully': 'Password changed successfully',
+                  'go_to_home': 'Go to Home',
+                  "verify_email": "Verify Email",
+
         }
       };
 }

@@ -4,8 +4,8 @@ import 'package:ionicons/ionicons.dart';
 import 'package:store/controller/auth/login_controller.dart';
 import 'package:store/core/constant/color.dart';
 import 'package:store/view/widget/auth/authbutton.dart';
-import 'package:store/view/widget/auth/customformfield.dart';
-import 'package:store/view/widget/auth/foggetpassword.dart';
+import 'package:store/view/widget/auth/form/customformfield.dart';
+import 'package:store/view/widget/auth/text/foggetpassword.dart';
 
 class AppLoginForm extends StatelessWidget {
   const AppLoginForm({Key? key})

@@ -16,7 +16,37 @@ class SignUpControllerImp
   late TextEditingController password;
 
   @override
-  signUp() {}
+  signUp() {
+    if (username.text.isEmpty ||
+        email.text.isEmpty ||
+        password.text.isEmpty ||
+        confirmPassword.text.isEmpty) {
+      Get.snackbar(
+        "Error",
+        "Please fill all the fields",
+        backgroundColor: Colors.red,
+        colorText: Colors.white,
+      );
+    } else if (password.text.length <= 6) {
+      Get.snackbar(
+        "Error",
+        "Password must be at least 6 characters",
+        backgroundColor: Colors.red,
+        colorText: Colors.white,
+      );}
+     else if (password.text !=
+        confirmPassword.text) {
+      Get.snackbar(
+        "Error",
+        "Password and Confirm Password does not match",
+        backgroundColor: Colors.red,
+        colorText: Colors.white,
+      );
+    } else {
+      Get.offAllNamed(AppRoutes.emailVerify);
+       
+    }
+  }
 
   @override
   goToSignIn() {

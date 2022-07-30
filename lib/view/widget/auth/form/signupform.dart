@@ -4,7 +4,7 @@ import 'package:ionicons/ionicons.dart';
 import 'package:store/controller/auth/signup_controller.dart';
 import 'package:store/core/constant/color.dart';
 import 'package:store/view/widget/auth/authbutton.dart';
-import 'package:store/view/widget/auth/customformfield.dart';
+import 'package:store/view/widget/auth/form/customformfield.dart';
 
 class AppSignUpForm extends StatelessWidget {
   const AppSignUpForm({Key? key})
@@ -20,7 +20,7 @@ class AppSignUpForm extends StatelessWidget {
         AppCustomFormFaild(
           controller: controller.username,
           keyboardType:
-              TextInputType.emailAddress,
+              TextInputType.text,
           lable: 'full_name'.tr,
           hint: 'Enter your full name'.tr,
           icon: Ionicons.person_outline,
@@ -59,7 +59,10 @@ class AppSignUpForm extends StatelessWidget {
         AppCustomAuthButton(
           color: AppColor.primary,
           text: 'signup'.tr,
-          onPressed: () {},
+          onPressed: () {
+            controller.signUp();
+          
+          },
         ),
       ],
     ));
